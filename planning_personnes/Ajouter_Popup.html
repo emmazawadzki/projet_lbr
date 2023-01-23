@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Titre</title>
+    <link href="Les_plannings.css">
+    <link href="Les_plannings.html">
+
+</head>
+
+
+
+<body>
+
+    <!-- Popup Ajouter -->
+    <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+            <form action="Les_plannings.php" class="formContainer">
+                <div class="titre">Nouveau
+                    <label for="Nom"></label>
+                    <input id="Nom" placeholder="Nom" name="Nom" required>
+
+                    <label for="Prenom"></label>
+                    <input id="Prenom" placeholder="Prenom" name="Prenom" required>
+
+                    <label for="email"></label>
+                    <input id="email" placeholder="email" name="email" required>
+
+                    <label for="Tel"></label>
+                    <input id="Tel" placeholder="Numéro de télephone" name="Tel" required>
+
+                    <label for="Heures_dispos_1er_jour"></label>
+                    <input id="Heures_dispos_1er_jour" placeholder="Heures dispos le 1er jour"
+                        name="Heures_dispos_1er_jour" required>
+
+                    <label for="Infos_complementaires"></label>
+                    <input id="Infos_complementaires" placeholder="Infos complémentaires" name="Infos_complementaires">
+
+
+                    <form>
+                        <input type="radio" id="Benevole" name="categorie" value="Benevole">
+                        <label for="Benevole">Bénévole</label>
+
+                        <input type="radio" id="Membre" name="categorie" value="Membre">
+                        <label for="Membre">Membre</label>
+
+                    </form>
+
+
+                    <input type="submit" class="btn cancel" id="submit" name="submit">
+                    <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- Popup Importer -->
+    <div class="loginPopup">
+        <div class="formPopup" id="popupImport">
+            <form class="formContainer" method="post" action="" enctype="multipart/form-data">
+                <div class="titre">Importer
+                    <input type='file' name="importfile" id="importfile">
+
+                    <input type="submit" id="but_import" name="but_import" value="Importer">
+                    <button type="button" class="btn cancel" onclick="closeImport()">Fermer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>

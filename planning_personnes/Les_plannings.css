@@ -1,0 +1,156 @@
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-family: 'ARIAL';
+    background-color: black;
+}
+
+/********* Information Perso************/
+
+.Info-Perso {
+    border-collapse: collapse;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    
+
+}
+.Planning-Perso{
+    border-collapse: collapse;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 60px;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+#nav {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    float: left;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ea001c;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    display: block;
+    padding: 10px 200px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #ea001c;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+#nav li a:hover {
+    background-color: #af001e;
+}
+
+.titre {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+.loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.formPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    bottom: 5%;
+    transform: translate(-50%, 10%);
+}
+
+
+.formContainer {
+    max-width: 700px;
+    padding: 5px;
+    background-color: #161920;
+}
+
+.formContainer input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: rgb(231, 231, 231);
+}
+
+.formContainer input:focus {
+    background-color: rgb(203, 203, 203);
+    outline: none;
+}
+
+.formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.formContainer .cancel {
+    background-color: #4c4c4c;
+}
+
+.formContainer .btn:hover,
+.openButton:hover {
+    opacity: 1;
+}
+
+table{
+    background-color: #4c4c4c;
+}
+
+td {
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px;
+    padding-left: 50px;
+    
+}
+tr:nth-child(even){background-color:  #303030 }

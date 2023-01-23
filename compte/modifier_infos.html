@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Informations</title>
+  <link rel="stylesheet" href="../compte/modifier_infos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+
+<!--FOND-->
+<div class="section">
+    <div class="container">
+    <span class="dot" id="dot1"></span>
+    <span class="dot" id="dot2"></span>
+    <span class="dot" id="dot3"></span>
+    <span class="dot" id="dot4"></span>
+    <span class="dot" id="dot5"></span>
+    <span class="dot" id="dot6"></span>
+    <span class="dot" id="dot7"></span>
+    <span class="dot" id="dot8"></span>
+    <span class="dot" id="dot9"></span>
+    <span class="dot" id="dot10"></span>
+    <img id="planete" src="../images/planete.png">
+    <img id="soleil" src="../images/soleil.png">
+
+    <!--PAGE-->
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3"><span>Modifier Mot de passe</span><span>Modifier Mail</span></h6>
+                      <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                      <label for="reg-log"></label>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <!--FORMULAIRE-->
+                                    <form method="post" action="modifier_mdp.php">
+                                        <h4 class="mb-4 pb-3">Mot de passe</h4>
+                                        <div class="form-group">
+                                            <input type="email" name="mail" class="form-style" placeholder="Email" id="logemail" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>	
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="pass_old" class="form-style" placeholder="Ancien mot de passe" id="logpass" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="new_pass" class="form-style" placeholder="Nouveau mot de passe" id="logpass" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="new_pass_conf" class="form-style" placeholder="Confirmer votre mot de passe" id="logpass" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <input type="submit" class="btn btn-bleu" value="Modifier" name="Submit">
+
+                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p> <p class="mb-0 mt-4 text-center"><a href="..\planning_general\planning_general.php" class="link">Retour</a></p>
+                                      </div>
+                                    </form>
+                              </div>
+                              <!--MAIL-->
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <!--FORMULAIRE-->
+                                    <form method="post" action="modifier_mail.php">
+                                        <h4 class="mb-4 pb-3">Mail</h4>
+                                        <div class="form-group mt-2">
+                                            <input type="email" name="mail" class="form-style" placeholder=" Ancien Email" id="logemail" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>	
+
+                                        <div class="form-group mt-2">
+                                            <input type="email" name="new_mail" class="form-style" placeholder="Nouveau Email" id="logemail" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>	
+
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="password" class="form-style" placeholder="Mot de passe" id="logpass" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <input type="submit" class="btn btn-bleu" value="Modifier" name="Submit2">
+                                        <p><a href="..\planning_general\planning_general.php" class="link">Retour</a></p>
+                                      </div>
+                                    </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+</div>
+</body>
+<script src="../compte/modifier_mail.php"></script>
+<script src="../compte/modifier_mdp.php"></script>
+</html>
